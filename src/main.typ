@@ -100,3 +100,32 @@
   dates: [2016 - 2020],
   []
 )
+
+= Projects
+
+#project(
+  name: [typst-almeida-cv],
+  short_description: [#lorem(8)],
+  dates: [Summer 2024 - now],
+  location: [],
+  url: [https://github.com/gteufelberger/typst-almeida-cv/],
+  tags: [
+    - Typst
+    - CV
+  ],
+  [#lorem(20)],
+)
+
+#project(
+  name: [#lorem(2)],
+  short_description: [#lorem(8)],
+  dates: [2020 - 2022],
+  location: [],
+  url: [https://example.com],
+  tags: [
+    - #lorem(2)
+    - #lorem(1)
+    - #lorem(3)
+  ],
+  [#lorem(20)],
+)

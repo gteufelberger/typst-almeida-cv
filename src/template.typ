@@ -141,3 +141,54 @@
     }
   )
 }
+
+// Project
+#let project(
+  name: [],
+  short_description: [],
+  dates: [],
+  location: [],
+  url: [],
+  tags: [],
+  content,
+) = {
+  grid(columns: (3fr, 1fr), column-gutter: 5pt,
+    [==== #name],
+    align(end, {
+      text(fill: accentColor, fi.map-icon.marker-alt)
+      h(4pt)
+      text(fill: gray, location)
+    })
+  )
+  text()[
+    ===== #short_description
+  ]
+
+  text()[
+    #dates
+
+    #location
+  ]
+
+  if url.has("dest") {
+    if url.dest.contains("https://github.com/") {
+      fa(fi.github) + h(4pt)
+    }
+    if url.dest.contains("https://gitlab") {
+      fa(fi.gitlab) + h(4pt)
+    }
+
+    link(url.dest)
+  }
+
+  v(5pt)
+
+  content
+
+  show list: items => {
+    align(end, items.children.map(
+      c => h(2pt) + pill(c.body) + h(2pt)
+    ).join())
+  }
+  tags
+}
