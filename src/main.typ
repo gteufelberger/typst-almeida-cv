@@ -5,6 +5,7 @@
 #resume(
   firstName: "John",
   lastName: "Doe",
+  tagline: "The one and only",
   picture: box(inset: (left: -1pt, top: -1pt), image("image.png", width: 100%)), asideInfo: [
 
     #grid(columns: 2, gutter: 1.5em,

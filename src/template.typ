@@ -4,7 +4,7 @@
 
 #let accentColor = rgb("e3bfb8")
 
-#let resume(firstName: "", lastName: "", picture: [], asideInfo: [], body) = {
+#let resume(firstName: "", lastName: "", tagline: "", picture: [], asideInfo: [], body) = {
 
   set page(
     margin: (right: 3em, rest: 6em),
@@ -47,7 +47,7 @@
       text(font: "Oswald", weight: 500, size: 4em, upper(content), ..args)
     }
 
-    nameStyle(fill: rgb("aaa"), firstName) + h(1em) + nameStyle(fill: rgb("e3bfb8"), lastName)
+    nameStyle(fill: rgb("aaa"), firstName) + h(1em) + nameStyle(fill: rgb("e3bfb8"), lastName) + h(1em) + "\n" + tagline
 
     body
   }
