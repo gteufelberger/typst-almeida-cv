@@ -87,12 +87,16 @@
 
 = Education
 
-=== BSc in Being Awesome
+#education(
+  name: [BSc in Being Awesome],
+  institution: [Utopia University],
+  dates: [Sep 2020 - now],
+  []
+)
 
-Utopia University \
-Sep 2020 - now
-
-=== Secondary education
-
-British College \
-2016 - 2020
+#education(
+  name: [Secondary education],
+  institution: [British College],
+  dates: [2016 - 2020],
+  []
+)

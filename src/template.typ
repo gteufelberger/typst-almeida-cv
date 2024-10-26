@@ -80,6 +80,34 @@
     text(fill: white, fa(icon)))
 }
 
+// Education
+#let education(name: [], institution: [], dates: [], focus_areas: [], content) = {
+  grid(columns: (3fr, 1fr), column-gutter: 5pt,
+    [=== #name],
+
+    align(end, {
+      text(fill: accentColor, fi.map-icon.marker-alt)
+      h(4pt)
+      text(fill: gray, institution)
+    }),
+
+    align(
+      end,
+      text(fill: accentColor, fi.clock) + h(4pt) + text(fill: gray, dates)
+    ),
+  )
+
+  content
+
+  if focus_areas != [] {
+    "With focus on:\n"
+    show list: items => {
+      items.children.map(c => h(2pt) + pill(c.body) + h(2pt)).join()
+    }
+    focus_areas
+  }
+}
+
 #let company(name: [], location: [], content) = {
   grid(columns: (3fr, 1fr), column-gutter: 5pt,
     [==== #name],
