@@ -2,6 +2,15 @@
 
 #let colorLink(..args) = text(fill: accentColor, link(..args))
 
+// Colour links blue
+#show link: this => {
+  let label-color = green
+  let default-color = rgb("#ff66ff")
+
+  underline(text(blue)[#this])
+}
+
+
 #resume(
   firstName: "John",
   lastName: "Doe",
