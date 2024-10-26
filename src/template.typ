@@ -192,3 +192,48 @@
   }
   tags
 }
+
+// Publication
+#let publication(
+  name: [],
+  short_description: [],
+  date: [],
+  location: [],
+  url: [],
+  tags: [],
+  content,
+) = {
+
+  grid(columns: (3fr, 1fr), column-gutter: 5pt,
+    [==== #name],
+    align(end, {
+      text(fill: accentColor, fi.map-icon.marker-alt)
+      h(4pt)
+      text(fill: gray, location)
+    })
+  )
+  text()[
+    ===== #short_description
+  ]
+
+  text()[
+    #date
+
+    #location
+  ]
+
+  if url.has("dest") {
+    link(url.dest)
+  }
+
+  v(5pt)
+
+  content
+
+  show list: items => {
+    align(end, items.children.map(
+      c => h(2pt) + pill(c.body) + h(2pt)
+    ).join())
+  }
+  tags
+}

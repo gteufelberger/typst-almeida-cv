@@ -102,6 +102,20 @@
   ]
 )
 
+= Publications
+
+#publication(
+  name: [Hier könnte Ihr Paper stehen],
+  short_description: [#lorem(20)],
+  date: [2024],
+  url: [https://example.com/],
+  tags: [
+    - Sample
+    - Tags
+  ],
+  []
+)
+
 = Projects
 
 #project(
