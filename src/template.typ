@@ -8,7 +8,7 @@
 
   set page(
     margin: (right: 3em, rest: 6em),
-    background: align(end, box(height: 100%, width: 100% / 3, fill: rgb("f5f5f5")))
+    background: align(end, box(height: 100%, width: 100% / 3, fill: rgb("f5f5f5"))),
   )
 
   set text(font: "Roboto", size: 9pt, fill: rgb("666"))
