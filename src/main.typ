@@ -21,6 +21,7 @@
       circFa(fi.envelope), link("mailto:john.doe@example.com")[john.doe\@example.com],
       circFa(fi.location-arrow), [Utopia],
       circFa(fi.map-icon.marker-alt), [Acacia Avenue],
+      circFa(fi.globe), align(horizon, link("https://example.com")[example.com])
     )
 
     == Skills
