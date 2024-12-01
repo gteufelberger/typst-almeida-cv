@@ -20,7 +20,7 @@
     #grid(columns: 2, gutter: 1.5em,
       circFa(fi.envelope), link("mailto:john.doe@example.com")[john.doe\@example.com],
       circFa(fi.location-arrow), [Utopia],
-      circFa(fi.map-icon.marker-alt), [Acacia Avenue]
+      circFa(fi.map-icon.marker-alt), [Acacia Avenue],
     )
 
     == Skills
