@@ -81,6 +81,7 @@
     radius: 50%,
     fill: accentColor,
     inset: 3pt,
+    outset: 1pt,
     text(fill: white, content)
   )
 }
