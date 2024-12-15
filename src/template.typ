@@ -141,7 +141,7 @@
     stroke: (left: gradient.linear(gray, white, angle: 90deg)),
     width: 100%,
     inset: (left: 8pt), {
-      grid(columns: (5fr, 2fr), column-gutter: 5pt,
+      grid(columns: (5fr, 3fr), column-gutter: 5pt,
         [===== #title],
         align(end, text(fill: accentColor, fi.clock) + h(4pt) + text(fill: gray, dates))
       )
