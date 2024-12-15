@@ -47,7 +47,13 @@
       text(font: "Oswald", weight: 500, size: 4em, upper(content), ..args)
     }
 
-    nameStyle(fill: rgb("aaa"), firstName) + h(1em) + nameStyle(fill: rgb("e3bfb8"), lastName) + h(1em) + "\n" + tagline
+    nameStyle(
+      fill: rgb("aaa"),
+      firstName
+    ) + h(1em) + nameStyle(
+      fill: rgb("e3bfb8"),
+      lastName
+    ) + h(1em) + "\n" + tagline
 
     body
   }
@@ -71,13 +77,22 @@
 }
 
 #let pill(content) = {
-  box(radius: 50%, fill: accentColor, inset: 3pt,
-    text(fill: white, content))
+  box(
+    radius: 50%,
+    fill: accentColor,
+    inset: 3pt,
+    text(fill: white, content)
+  )
 }
 
 #let circFa(icon) = {
-  square(outset: 4pt, inset: 0pt, fill: accentColor, radius: 50%,
-    text(fill: white, fa(icon)))
+  square(
+    outset: 4pt,
+    inset: 0pt,
+    fill: accentColor,
+    radius: 50%,
+    text(fill: white, fa(icon))
+  )
 }
 
 // Education
